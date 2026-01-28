@@ -1,10 +1,8 @@
-
-```typescript name=lib/api/default-sources.ts url=https://github.com/nicemax24/KVideo/blob/main/lib/api/default-sources.ts
 import type { VideoSource } from '@/lib/types';
 
 // Default predefined video sources - Real Chinese video APIs
 // 已移除项：'leba' (乐播资源), 'aidan' (爱蛋资源), 'yilingba2' (1080JSON),
-// 以及用户本次请求移除的：'youku' (优酷资源), 'lezi' (乐子资源), 'lezi2' (乐子HTTP),
+// 以及你要求移除的：'youku' (优酷资源), 'lezi' (乐子资源), 'lezi2' (乐子HTTP),
 // 'baofeng' (暴风资源), 'baofeng_app_alt' (暴风备用), 'sanliuling' (360资源)
 export const DEFAULT_SOURCES: VideoSource[] = [
   { id: 'feifan', name: '非凡资源', baseUrl: 'http://ffzy5.tv/api.php/provide/vod', searchPath: '', detailPath: '', enabled: true, priority: 1 },
